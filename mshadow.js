@@ -2,7 +2,7 @@ const shadowElements = document.getElementsByClassName('m-shadow')
 let shadowProperties = [];
 let mouseX, mouseY
 
-function getElementPrpperties() {
+function getElementProperties() { 
   shadowProperties = [];
   for (let i = 0; i < shadowElements.length; i++) {
     let elmboxshadow = getComputedStyle(shadowElements[i]).boxShadow;
@@ -43,7 +43,7 @@ function mShadows(
     !shadowProperties.length &&
     document.getElementsByClassName("m-shadow")[0]
   ) {
-    getElementPrpperties();
+    getElementProperties();
   }
   for (let i = 0; i < shadowElements.length; i++) {
     let element = shadowElements[i].getBoundingClientRect()
